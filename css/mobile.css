@@ -1,6 +1,11 @@
 #navbar .logo {
   float: none;
   text-align: center;
+  display: block;
+  color:#fff;
+  width: 100%;
+  margin: auto 0;
+  padding-top: 20px;
 }
 
 #navbar ul, #navbar ul li {
