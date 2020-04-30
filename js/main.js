@@ -1,10 +1,12 @@
 // Responsive Nav
 $(function() {
   menu = $("nav ul");
+  title = $( ".slogan" )
 
   $(".openup").on("click", function(e) {
     e.preventDefault();
     menu.slideToggle();
+    title.toggle()
   });
 
   $(window).resize(function() {
@@ -18,6 +20,7 @@ $(function() {
     var w = $(window).width();
     if (w < 480) {
       menu.slideToggle();
+      title.toggle()
     }
   });
   // $(".open-menu").height($(window).height());

@@ -1,3 +1,17 @@
+header {
+  height: 75vh;
+  background-position: center;
+}
+
+.col  {
+  width: 100%;
+  margin: 0 0 4% 0;
+}
+
+.box {
+  padding: 56px;;
+}
+
 #navbar a {
   /* display: block; */
   text-align: left;
@@ -17,7 +31,7 @@
   width: 35px;
   position: relative;
   top: 22px;
-  right: 25px;
+  right: 0px;
 }
 
 #navbar .openup:after {
@@ -60,39 +74,14 @@
   /* padding-bottom: 0px; */
 }
 
-/* #navbar a {
-  float: none;
-  text-align: center;
-  display: block;
-  color:#fff;
-  width: 40%;
-  margin: auto 0;
-  padding-top: 20px;
-}
-
-#navbar a.logo {
-  margin: 0;
+h1 {
+  font-size: 90%;
   padding: 0;
 }
 
-#navbar ul, #navbar ul li {
-  float: none;
-}
-
-#navbar ul li a {
-  padding: 5px;
-  border-bottom: #444 dotted 1px;
-} */
-
-
-/* Showcase */
-#showcase {
-  height: 100%;
-}
-
-#showcase .showcase-content {
-  padding-top: 70px;
-  padding-bottom: 30px;
+/* Quote Box */
+.section-quote {
+  background-color: #8A817C;
 }
 
 /*  Home Info */

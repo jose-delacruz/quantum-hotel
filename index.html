@@ -7,8 +7,8 @@
   <!-- SEO -->
   <!-- <meta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
   <meta name="keywords" content="hotel,boston hotel,new england hotel"> -->
-  <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/css/grid.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)"
   href="css/mobile.css">
@@ -19,7 +19,7 @@
 <body>
   <header>
     <!-- For seeing box -->
-    <!-- style:"border= 1px solid white" -->
+    <!-- style="border= 1px solid white" -->
     <nav id="navbar">
       <div class="container">
           <a href="index.html" class="logo"><img src="img/logo-2.png" alt="logo"></a>
@@ -30,21 +30,35 @@
               <li><a  href="#">Location</a></li>
               <li><a  href="#">Contact</a></li>
             </ul>
+            <h1 class="slogan">Relax and Explore</h1>
       </div>
   </nav>
-
-  <!-- <div id="showcase">
-    <div class="container">
-      <div class="showcase-content">
-        <h1><span class="text-primary">Enjoy</span> Your Stay</h1>
-        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing 
-          elit. Blanditiis consequatur sed illo velit, cum similique veniam 
-          exercitationem eum deleniti omnis.</p>
-           <a class="btn" href="about.html">About Our Hotel</a>
-      </div>
-    </div>
-  </div> -->
   </header>
+
+  <section class="container section-quote">
+    <form class="quote-form">
+      <div class="box">
+        <div class="row">
+          <div class="col span-1-of-2">
+              <label for="checkin">Check In Date</label>
+          </div>
+          <div class="col span-2-of-2">
+              <input type="text" name="checkin" id="checkin" placeholder="MM/DD/YYYY"
+              onfocus="(this.type='date')">
+          </div>
+        <div class="row">
+          <div class="col span-1-of-2">
+              <label for="checkout">Check Out Date</label>
+          </div>
+          <div class="col span-2-of-2">
+              <input type="text" name="checkout" id="checkout" placeholder="MM/DD/YYYY"
+              onfocus="(this.type='date')">
+          </div>
+      </div>
+        <a href="#" class="btn">Request a Quote</a>
+      </div>
+    </form>
+  </section>
 
   <!-- <section id="home-info" class="bg-dark">
     <div class="info-img"></div>
