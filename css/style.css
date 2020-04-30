@@ -116,14 +116,18 @@ header {
 }
 
 #navbar img {
-  width: 70%;
+  width: 140px;
+}
+
+#navbar .openup {
+  display: none;
 }
 
 #navbar ul {
   list-style: none;
   float: right;
   position: relative;
-  top: 40px;
+  top: 60px;
 
 }
 
@@ -134,7 +138,7 @@ header {
 #navbar ul li a {
   display: inline-block;
   padding: 0;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   margin-left: 20px;
   text-align: center;
   color: #f4f3ee;

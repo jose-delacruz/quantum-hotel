@@ -1,11 +1,78 @@
-#navbar .logo {
+#navbar a {
+  /* display: block; */
+  text-align: left;
+  float: none;
+  width: 50%;
+  position: relative;
+  top: 12px;
+}
+
+#navbar img {
+  width: 61.2px;
+}
+
+#navbar .openup {
+  display: block;
+  float: right;
+  width: 35px;
+  position: relative;
+  top: 22px;
+  right: 25px;
+}
+
+#navbar .openup:after {
+  content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    color: #F4F3EE;
+    display: inline-block;
+    
+}
+
+#navbar ul {
+  list-style: none;
+  float: none;
+  text-align: center;
+  top: 0px;
+  display: none;
+
+}
+
+#navbar ul li {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#navbar ul li:last-of-type {
+  margin-bottom: 10px;
+}
+
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  border-bottom: none;
+  /* padding-bottom: 0px; */
+}
+
+/* #navbar a {
   float: none;
   text-align: center;
   display: block;
   color:#fff;
-  width: 100%;
+  width: 40%;
   margin: auto 0;
   padding-top: 20px;
+}
+
+#navbar a.logo {
+  margin: 0;
+  padding: 0;
 }
 
 #navbar ul, #navbar ul li {
@@ -15,7 +82,8 @@
 #navbar ul li a {
   padding: 5px;
   border-bottom: #444 dotted 1px;
-}
+} */
+
 
 /* Showcase */
 #showcase {
