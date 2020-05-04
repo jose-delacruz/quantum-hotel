@@ -12,6 +12,8 @@ header {
   padding: 56px;;
 }
 
+
+
 #navbar a {
   /* display: block; */
   text-align: left;
@@ -54,6 +56,9 @@ header {
   text-align: center;
   top: 0px;
   display: none;
+  /* position: relative;
+  top: 50px;
+  left: 7rem; */
 
 }
 
@@ -83,6 +88,22 @@ h1 {
 .section-quote {
   background-color: #8A817C;
 }
+
+.quote-form {
+  background:#000;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  bottom: 0;
+  left:0;
+  padding: 24px;
+}
+
+.quote-dates:first-of-type {
+  margin-left: 0px;
+}
+
+
 
 /*  Home Info */
 #home-info {

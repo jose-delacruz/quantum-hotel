@@ -12,6 +12,7 @@ html, body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.7em;
   font-size: 20px;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -33,7 +34,7 @@ h1 {
   display: block;
   text-align: center;
   position: relative;
-  top: 20px;
+  top: 10px;
   padding: 50px;
 }
 
@@ -52,11 +53,12 @@ p {
 }
 
 header {
-  background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(/img/hero-bedroom.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(/img/hotel-lobby.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 95vh;
+  position: relative;
 }
 /* Utility Classes */
 .container {
@@ -76,16 +78,16 @@ header {
 
 .btn {
   display: inline-block;
+  text-transform: uppercase;
   font-size: 18px;
-  color: #fff;
-  background: #333;
+  color: #E0AFA0;
   padding: 13px 20px;
-  border: none;
+  border: #E0AFA0 1px solid;
   cursor: pointer;
 }
 
 .btn:hover {
-  background: #f7c08a;
+  background: #E0AFA0;
   color: #333;
 }
 
@@ -127,6 +129,8 @@ header {
 .py-3 {
   padding: 30px 0;
 }
+
+/* HEADER */
 
 /* Navbar */
 #navbar {
@@ -183,7 +187,129 @@ header {
   /* padding-bottom: 0px; */
 }
 
-/* Request Quote Box */
+/* Quote Form */
+.quote-form {
+  background:#000;
+  position: absolute;
+  width: 100%;
+  bottom: -140px;
+  left: 408px;
+}
+
+.quote-dates {
+  color: #fff; 
+  text-align: center; 
+  margin:50px 60px 50px 69px; 
+  width: 40%;
+}
+.quote-dates:first-of-type {
+  margin-left: 25px;
+}
+
+.quote-dates label {
+  text-align: center; 
+  font-weight: 100; 
+  font-size: 60%;
+  text-transform: uppercase;
+}
+
+.quote-dates .quote-checkin,
+.quote-dates .quote-checkout {
+  text-align: center; 
+  width: 60%; 
+  padding: 35px 0; 
+  margin: 15px 0; 
+  font-weight: 100; 
+  font-size: 90%;
+  color: #fff; 
+  background-color: #463F3A;
+}
+
+.quote-btn {
+  text-align: center; 
+  margin: 25px 0;
+}
+
+
+/* Room Choices */
+.section-room-choices {
+  margin-top: 300px;
+  margin-bottom: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
+  /* border: 1px solid black; */
+}
+
+.choice-1,
+.choice-2,
+.choice-3 {
+  /* border: 1px solid black; */
+  box-shadow: 0 2px 2px #efefef;
+  background-color: #fff;
+}
+
+.choice-desc {
+  padding: 25px 20px 25px 20px;
+  height: auto;
+}
+
+.choice-1-img,
+.choice-2-img,
+.choice-3-img {
+  width: 100%;
+  height: 226px;
+}
+
+.choice-desc h3 {
+  font-weight: 500;
+  padding-bottom: 0;
+}
+
+.choice-desc h3 a {
+  font-size: 90%;
+}
+
+.choice-desc p {
+  margin: 0 0;
+  font-size: 75%;
+}
+
+.choice-desc p:first-of-type {
+  color: #463F3A;
+}
+
+.choice-desc p:last-of-type {
+  margin-top: 10px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  height: 80px;
+}
+
+.choice-desc a {
+  text-transform: uppercase;
+  color: #463F3A;
+  font-size: 65%;
+}
+.choice-desc a:hover {
+  
+  color: #8A817C;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #showcase {
   background: url('../img/showcase.jpg') no-repeat center center/cover;
   height: 600px;
@@ -329,4 +455,91 @@ header {
   background: #444;
   color: #fff;
   padding: 20px;
+}
+
+
+
+
+/* Responsive Devices */
+
+/* Medium devices (landscape tablets, 769px and up) */
+/* @media only screen and (max-width: 992px) { */
+  /* Quote Box */
+/* .section-quote {
+  background-color: #8A817C;
+}
+
+.quote-form {
+  background:#000;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  bottom: 0;
+  left:0;
+  padding: 24px;
+}
+
+.quote-dates {
+  margin:50px 60px 50px 31px;
+}
+
+
+.quote-dates:first-of-type {
+  margin-left: 37px;
+}
+} */
+
+
+/* large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+  .quote-form {
+    position: absolute;
+    width: 56%;
+    bottom: -140px;
+    left: 20.8%;
+  }
+
+  .quote-dates {
+    margin:50px 0;
+    width: 50%;
+  }
+  
+  
+  .quote-dates:first-of-type {
+    margin-left: 0;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, between 1201px and 1910) */
+@media only screen and (max-width: 1909px) and (min-width: 1201px) {
+
+  .quote-form {
+    position: absolute;
+    width: 56%;
+    bottom: -140px;
+    left: 20.8%;
+  }
+
+  .quote-dates {
+    margin:50px 0;
+    width: 50%;
+  }
+  
+  
+  .quote-dates:first-of-type {
+    margin-left: 0;
+  }
+}
+
+/* Ultra large devices (large laptops and desktops, 1910px and up) */
+@media only screen and (min-width: 1910px) {
+  .quote-dates {
+    margin:50px 0px;
+    width: 50%;
+  }
+  
+  
+  .quote-dates:first-of-type {
+    margin-left: 0px;
+  }
 }

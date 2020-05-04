@@ -30,34 +30,76 @@
               <li><a  href="#">Location</a></li>
               <li><a  href="#">Contact</a></li>
             </ul>
-            <h1 class="slogan">Relax and Explore</h1>
       </div>
   </nav>
+  <h1 class="slogan">Relax and Explore</h1>
+
   </header>
 
-  <section class="container section-quote">
-    <form class="quote-form">
-      <div class="box">
-        <div class="row">
-          <div class="col span-1-of-2">
-              <label for="checkin">Check In Date</label>
-          </div>
-          <div class="col span-2-of-2">
-              <input type="text" name="checkin" id="checkin" placeholder="MM/DD/YYYY"
-              onfocus="(this.type='date')">
-          </div>
-        <div class="row">
-          <div class="col span-1-of-2">
-              <label for="checkout">Check Out Date</label>
-          </div>
-          <div class="col span-2-of-2">
-              <input type="text" name="checkout" id="checkout" placeholder="MM/DD/YYYY"
-              onfocus="(this.type='date')">
-          </div>
+  <section class="container quote-form">
+    
+   
+      <div class="col span-1-of-2 quote-dates">
+        <div>
+          <label for="checkin">Check In Date</label>
+        </div>
+        <div>
+          <input type="text" name="checkin" class="quote-checkin"  placeholder="Select arrival date"
+          onfocus="(this.type='date')">
+        </div>
       </div>
+  
+      <div class="col span-1-of-2 quote-dates">
+        <div>
+          <label for="checkout">Check Out Date</label>
+        </div>
+        <div>
+          <input type="text" name="checkout" class="quote-checkout" placeholder="Select departure date"
+          onfocus="(this.type='date')">
+        </div>
+      </div>
+  
+      <div class="quote-btn clr">
         <a href="#" class="btn">Request a Quote</a>
       </div>
-    </form>
+  </section>
+  
+
+  <section>
+    <div class="container section-room-choices">
+      <!-- Column 1 -->
+      <div class="col span-1-of-3 choice-1">
+        <a href="#"><img src="/img/deluxe_suite.jpg" alt="deluxe suite image" class="choice-1-img"></a>
+        <div class="choice-desc">
+          <h3><a href="#">Deluxe Suite</a></h3>
+          <p>Classically Modern</p>
+          <p>Accommodation at the Deluxe Room features contemporary design and central heating.</p>
+          <a href="#">Details and Booking</a>
+        </div>
+        
+      </div>
+      <!-- Column 2 -->
+      <div class="col span-1-of-3 choice-2">
+        <a href="#"><img src="/img/grand_suite.png" alt="grand suite image" class="choice-2-img"></a>
+        <div class="choice-desc">
+          <h3><a href="#">Grand Suite</a></h3>
+          <p>The Space You Need</p>
+          <p>If you need an at home feel, this room is the perfect space.</p>
+          <a href="#">Details and Booking</a>
+        </div>
+      </div>
+      <!-- Column 3 -->
+      <div class="col span-1-of-3 choice-3">
+        <a href="#"><img src="/img/presidential_suite.png" alt="presidential suite image" class="choice-3-img"></a>
+        <div class="choice-desc">
+          <h3><a href="#">Presidential Suite</a> </h3>
+          <p>Feel Like The Leader</p>
+          <p>Who needs a portrait when the work of art is the view of the skyline.</p>
+          <a href="#">Details and Booking</a>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- <section id="home-info" class="bg-dark">
