@@ -103,44 +103,34 @@ h1 {
   margin-left: 0px;
 }
 
-
-
-/*  Home Info */
-#home-info {
-  height: 550px;
+/* Room Choices */
+.section-room-choices {
+  margin-top: 20px;
+  
+  /* border: 1px solid black; */
 }
 
-#home-info .info-img {
-  display: none;
-}
-
-#home-info .info-content {
-  float: none;
-  width: 100%;
-}
-
-/* Boxes */
-.box {
-  float: none;
-  width: 100%;
-}
-
-/* About */
-#about-info .info-right,
-#about-info .info-left {
-  float: none;
-  width: 100%;
-}
-
-#about-info .info-right {
+/* Footer */
+.social-contact {
   margin-top: 30px;
 }
 
-.l-heading {
-  text-align: center;
+.footer-contact {
+  height: 110px;
+  margin-bottom: 0;
+  text-align: left;
 }
 
-/* Contact */
-#contact-info .box {
-  border: #444 dotted 1px;
+.footer-contact li{
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-contact li.span-1-of-3{
+  margin-left: 90px;
+}
+
+
+footer .legal p {
+  text-align: center;
 }
